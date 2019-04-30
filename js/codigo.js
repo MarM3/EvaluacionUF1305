@@ -31,7 +31,7 @@ function muestraFecha(){
     }
 
     document.getElementById("mostrardatos").innerHTML = "RESULTADOS: Hoy es " + diaSemana + ". La hora actual es " +
-            miHora.getHours() + ":" + miHora.getMinutes() + ".";
+            miHora.getHours() + ":" + miHora.getMinutes() + "."; // + (miHora.getMinutes()<10?'0':''), para los minutos menores de 10
 }
 
 function voltear(){

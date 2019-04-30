@@ -1,5 +1,26 @@
-.col-sm-12{
-    background-color: aqua;
-    height: 50px;
+.cabecera{
+    grid-area: header;
     text-align: center;
+    background-color: aqua;
+}
+.enlaces{
+    grid-area: nav;
+    background-color: aquamarine;
+}
+.contenido{
+    grid-area: main;
+    background-color: aliceblue;
+}
+.pie{
+    grid-area: footer;
+    background-color: azure;
+}
+
+.contenedor{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 'header header header header header header header'
+            'nav nav main main main main main'
+            'footer footer footer footer footer footer footer';
+    padding: 10px;
 }
